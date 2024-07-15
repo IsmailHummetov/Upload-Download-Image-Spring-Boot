@@ -27,7 +27,7 @@ public class ImageServiceImpl implements ImageService {
                         .imageData(ImageUtils.compressImage(file.getBytes()))
                         .build());
         if (image!=null)
-            return "File uploaded  successfully" + file.getOriginalFilename();
+            return "File uploaded  successfully: " + file.getOriginalFilename();
         return null;
     }
 
